@@ -1,0 +1,27 @@
+.square {
+    height: 100px;
+    width: 100px;
+    background: linear-gradient(to bottom, #fefcea, #f1da36);
+    float: left;
+    margin: 0 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.right {
+    float: right;
+}
+
+.block {
+    background-color: aqua;
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border: 3px solid darkolivegreen;
+    padding: 5px 7px 5px 2px;
+}
