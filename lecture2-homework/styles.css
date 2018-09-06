@@ -109,7 +109,8 @@
     flex-direction: row;
 }
 
-@media screen and (max-width: 575.98px) {
+@media screen and (max-width: 575.98px),
+       screen and (max-device-width: 575.98px){
     .row-xs-1,
     .row-xs-2,
     .row-xs-3,
@@ -129,7 +130,8 @@
 
 }
 
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 767.98px),
+       screen and (max-device-width: 767.98px){
     .row-md-1,
     .row-md-2,
     .row-md-3,
@@ -149,7 +151,8 @@
 
 }
 
-@media screen and (max-width: 991.98px) {
+@media screen and (max-width: 991.98px),
+       screen and (max-device-width: 991.98px){
     .row-lg-1,
     .row-lg-2,
     .row-lg-3,
@@ -169,7 +172,8 @@
 
 }
 
-@media screen and (max-width: 1199.98px) {
+@media screen and (max-width: 1199.98px),
+       screen and (max-device-width: 1199.98px){
     .row-xl-1,
     .row-xl-2,
     .row-xl-3,
