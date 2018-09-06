@@ -1,0 +1,66 @@
+.header {
+    height: 50px;
+    background-color: aqua;
+    width: 100%;
+}
+
+.fix {
+    height: 500px;
+    background-color: #f1da36;
+    width: 280px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    height: calc(85vh);
+    width: 80%;
+    padding: 5px;
+    border: 2px solid grey;
+    margin: 5px 5px;
+    overflow-y: scroll;
+}
+
+html, body {
+    margin: 0px;
+    height: 100%;
+}
+
+.product {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    border-bottom: 2px solid grey;
+    width: 95%;
+}
+
+.img {
+    border: 1px solid grey;
+    min-width: 100px;
+    min-height: 100px;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+}
+
+.disription {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    min-width: 300px;
+    display: block;
+}
+
+.buy {
+    background-color: green;
+    margin-left: auto;
+}
+
+.info {
+    margin: 0 10px;
+    text-overflow: ellipsis;
+    min-width: 300px;
+    max-height: 50px;
+}
