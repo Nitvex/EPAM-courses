@@ -1,0 +1,28 @@
+.row {
+    margin: 5px;
+    height: 400px;
+    position: relative;
+
+}
+
+.square {
+    width: 19%;
+    height: 19%;
+    background-color: #f1da36;
+    display: inline-block;
+}
+
+.square:nth-child(3n) {
+    background-color: red;
+}
+
+.square:last-child {
+    position: relative;
+    top: 15px;
+    left: 15px;
+    background-color: aquamarine;
+}
+
+.square:first-child {
+    background-color: aqua;
+}
