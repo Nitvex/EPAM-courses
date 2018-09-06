@@ -109,8 +109,115 @@
     flex-direction: row;
 }
 
-@media screen and (max-width: 575.98px),
-       screen and (max-device-width: 575.98px){
+/* Horizontal margins */
+
+.mx-1 {
+    margin: 0 4px;
+}
+
+.mx-2 {
+    margin: 0 8px;
+}
+
+.mx-3 {
+    margin: 0 12px;
+}
+
+.mx-4 {
+    margin: 0 16px;
+}
+
+/* Vertical margins */
+
+.my-1 {
+    margin: 4px 0;
+}
+
+.my-2 {
+    margin: 8px 0;
+}
+
+.my-3 {
+    margin: 12px 0;
+}
+
+.my-4 {
+    margin: 16px 0;
+}
+
+/* All-side margins */
+
+.ma-1 {
+    margin: 4px;
+}
+
+.ma-2 {
+    margin: 8px;
+}
+
+.ma-3 {
+    margin: 12px;
+}
+
+.ma-4 {
+    margin: 16px;
+}
+
+/* Horizontal paddings */
+
+.px-1 {
+    padding: 0 4px;
+}
+
+.px-2 {
+    padding: 0 8px;
+}
+
+.px-3 {
+    padding: 0 12px;
+}
+
+.px-4 {
+    padding: 0 16px;
+}
+
+/* Vertical paddings */
+
+.py-1 {
+    padding: 4px 0;
+}
+
+.py-2 {
+    padding: 8px 0;
+}
+
+.py-3 {
+    padding: 12px 0;
+}
+
+.py-4 {
+    padding: 16px 0;
+}
+
+/* All-side paddings */
+
+.pa-1 {
+    padding: 4px;
+}
+
+.pa-2 {
+    padding: 8px;
+}
+
+.pa-3 {
+    padding: 12px;
+}
+
+.pa-4 {
+    padding: 16px;
+}
+
+@media screen and (max-width: 575.98px), screen and (max-device-width: 575.98px) {
     .row-xs-1,
     .row-xs-2,
     .row-xs-3,
@@ -130,8 +237,7 @@
 
 }
 
-@media screen and (max-width: 767.98px),
-       screen and (max-device-width: 767.98px){
+@media screen and (max-width: 767.98px), screen and (max-device-width: 767.98px) {
     .row-md-1,
     .row-md-2,
     .row-md-3,
@@ -151,8 +257,7 @@
 
 }
 
-@media screen and (max-width: 991.98px),
-       screen and (max-device-width: 991.98px){
+@media screen and (max-width: 991.98px), screen and (max-device-width: 991.98px) {
     .row-lg-1,
     .row-lg-2,
     .row-lg-3,
@@ -172,8 +277,7 @@
 
 }
 
-@media screen and (max-width: 1199.98px),
-       screen and (max-device-width: 1199.98px){
+@media screen and (max-width: 1199.98px), screen and (max-device-width: 1199.98px) {
     .row-xl-1,
     .row-xl-2,
     .row-xl-3,
