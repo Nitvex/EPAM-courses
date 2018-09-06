@@ -1,0 +1,56 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.logo {
+    border: 1px solid grey;
+    font-size: 36px;
+    background-color: #fefcea;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-end;
+}
+
+li {
+    display: inline-block;
+    list-style: none;
+    margin-right: 8px;
+    padding: 2px;
+}
+
+li:nth-child(2) {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+input {
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+}
+
+.header {
+    background: gainsboro;
+    margin: 0 -15px;
+    padding: 15px;
+}
+
+@media screen and (max-width: 992px) {
+    ul {
+        justify-content: center;
+    }
+
+    div {
+        text-align: center;
+    }
+}
