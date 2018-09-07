@@ -7,15 +7,34 @@
     background-color: green;
     height: 100px;
 }
-.red{
+
+.red {
     background-color: red;
 }
 
 body, html {
     margin: 0;
+    font-size: 12px;
 }
 
 .container {
     display: flex;
     flex-direction: row;
+}
+
+.heading {
+    font-size: 3rem;
+    margin: 1.666rem 0;
+    background-color: aquamarine;
+}
+
+.subheading {
+    font-size: 2rem;
+    margin: 1rem 0;
+
+}
+
+.rectangle {
+    width: 30%;
+    height: 100px;
 }

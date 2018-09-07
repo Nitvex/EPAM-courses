@@ -217,6 +217,69 @@
     padding: 16px;
 }
 
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Floats */
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+/* Flex */
+.flex {
+    display: flex;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.y-center {
+    display: flex;
+    justify-content: center;
+}
+
+.x-start {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.x-end {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.text-center {
+    text-align: center;
+    justify-content: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
 @media screen and (max-width: 575.98px), screen and (max-device-width: 575.98px) {
     .row-xs-1,
     .row-xs-2,
