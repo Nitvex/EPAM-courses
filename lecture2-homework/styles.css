@@ -274,10 +274,12 @@
 
 .text-left {
     text-align: left;
+    justify-content: left;
 }
 
 .text-right {
     text-align: right;
+    justify-content: right;
 }
 
 @media screen and (max-width: 575.98px), screen and (max-device-width: 575.98px) {
