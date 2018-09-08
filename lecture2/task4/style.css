@@ -1,0 +1,22 @@
+html, body {
+    font-size: 16px;
+}
+
+.blue {
+    background-color: aqua;
+}
+
+.pink {
+    background-color: pink;
+    height: 200px;
+
+}
+
+.green {
+    background-color: green;
+}
+
+.white {
+    background-color: wheat;
+    height: 100px;
+}
