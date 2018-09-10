@@ -1,112 +1,118 @@
 /* Column system
    Here is 12-column system presented
  */
-.row-xs-1,
-.row-md-1,
-.row-lg-1,
-.row-xl-1 {
+.col-xs-1,
+.col-md-1,
+.col-lg-1,
+.col-xl-1 {
     width: 8.333333333%;
     display: flex;
     flex-direction: row;
 }
 
-.row-xs-2,
-.row-md-2,
-.row-lg-2,
-.row-xl-2 {
+.col-xs-2,
+.col-md-2,
+.col-lg-2,
+.col-xl-2 {
     width: 16.666666666%;
     display: flex;
     flex-direction: row;
 }
 
-.row-xs-3,
-.row-md-3,
-.row-lg-3,
-.row-xl-3 {
+.col-xs-3,
+.col-md-3,
+.col-lg-3,
+.col-xl-3 {
     width: 25%;
     display: flex;
     flex-direction: row;
 }
 
-.row-xs-4,
-.row-md-4,
-.row-lg-4,
-.row-xl-4 {
+.col-xs-4,
+.col-md-4,
+.col-lg-4,
+.col-xl-4 {
     width: 33.333333333%;
     display: flex;
     flex-direction: row;
 }
 
-.row-xs-5,
-.row-md-5,
-.row-lg-5,
-.row-xl-5 {
+.col-xs-5,
+.col-md-5,
+.col-lg-5,
+.col-xl-5 {
     width: 41.666666666%;
     display: flex;
     flex-direction: row;
 }
 
-.row-xs-6,
-.row-md-6,
-.row-lg-6,
-.row-xl-6 {
+.col-xs-6,
+.col-md-6,
+.col-lg-6,
+.col-xl-6 {
     width: 50%;
     display: flex;
     flex-direction: row;
 }
 
-.row-xs-7,
-.row-md-7,
-.row-lg-7,
-.row-xl-7 {
+.col-xs-7,
+.col-md-7,
+.col-lg-7,
+.col-xl-7 {
     width: 58.333333333%;
     display: flex;
     flex-direction: row;
 }
 
-.row-xs-8,
-.row-md-8,
-.row-lg-8,
-.row-xl-8 {
+.col-xs-8,
+.col-md-8,
+.col-lg-8,
+.col-xl-8 {
     width: 66.666666666%;
     display: flex;
     flex-direction: row;
 }
 
-.row-xs-9,
-.row-md-9,
-.row-lg-9,
-.row-xl-9 {
+.col-xs-9,
+.col-md-9,
+.col-lg-9,
+.col-xl-9 {
     width: 75%;
     display: flex;
     flex-direction: row;
 }
 
-.row-xs-10,
-.row-md-10,
-.row-lg-10,
-.row-xl-10 {
+.col-xs-10,
+.col-md-10,
+.col-lg-10,
+.col-xl-10 {
     width: 83.333333333%;
     display: flex;
     flex-direction: row;
 }
 
-.row-xs-11,
-.row-md-11,
-.row-lg-11,
-.row-xl-11 {
+.col-xs-11,
+.col-md-11,
+.col-lg-11,
+.col-xl-11 {
     width: 91.666666666%;
     display: flex;
     flex-direction: row;
 }
 
-.row-xs-12,
-.row-md-12,
-.row-lg-12,
-.row-xl-12 {
+.col-xs-12,
+.col-md-12,
+.col-lg-12,
+.col-xl-12 {
     width: 100%;
     display: flex;
     flex-direction: row;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
 }
 
 /* Horizontal margins */
@@ -283,18 +289,18 @@
 }
 
 @media screen and (max-width: 575.98px), screen and (max-device-width: 575.98px) {
-    .row-xs-1,
-    .row-xs-2,
-    .row-xs-3,
-    .row-xs-4,
-    .row-xs-5,
-    .row-xs-6,
-    .row-xs-7,
-    .row-xs-8,
-    .row-xs-9,
-    .row-xs-10,
-    .row-xs-11,
-    .row-xs-12 {
+    .col-xs-1,
+    .col-xs-2,
+    .col-xs-3,
+    .col-xs-4,
+    .col-xs-5,
+    .col-xs-6,
+    .col-xs-7,
+    .col-xs-8,
+    .col-xs-9,
+    .col-xs-10,
+    .col-xs-11,
+    .col-xs-12 {
         flex-direction: column;
         justify-content: center;
         text-align: center;
@@ -303,18 +309,18 @@
 }
 
 @media screen and (max-width: 767.98px), screen and (max-device-width: 767.98px) {
-    .row-md-1,
-    .row-md-2,
-    .row-md-3,
-    .row-md-4,
-    .row-md-5,
-    .row-md-6,
-    .row-md-7,
-    .row-md-8,
-    .row-md-9,
-    .row-md-10,
-    .row-md-11,
-    .row-md-12 {
+    .col-md-1,
+    .col-md-2,
+    .col-md-3,
+    .col-md-4,
+    .col-md-5,
+    .col-md-6,
+    .col-md-7,
+    .col-md-8,
+    .col-md-9,
+    .col-md-10,
+    .col-md-11,
+    .col-md-12 {
         flex-direction: column;
         justify-content: center;
         text-align: center;
@@ -323,18 +329,18 @@
 }
 
 @media screen and (max-width: 991.98px), screen and (max-device-width: 991.98px) {
-    .row-lg-1,
-    .row-lg-2,
-    .row-lg-3,
-    .row-lg-4,
-    .row-lg-5,
-    .row-lg-6,
-    .row-lg-7,
-    .row-lg-8,
-    .row-lg-9,
-    .row-lg-10,
-    .row-lg-11,
-    .row-lg-12 {
+    .col-lg-1,
+    .col-lg-2,
+    .col-lg-3,
+    .col-lg-4,
+    .col-lg-5,
+    .col-lg-6,
+    .col-lg-7,
+    .col-lg-8,
+    .col-lg-9,
+    .col-lg-10,
+    .col-lg-11,
+    .col-lg-12 {
         flex-direction: column;
         justify-content: center;
         text-align: center;
@@ -343,18 +349,18 @@
 }
 
 @media screen and (max-width: 1199.98px), screen and (max-device-width: 1199.98px) {
-    .row-xl-1,
-    .row-xl-2,
-    .row-xl-3,
-    .row-xl-4,
-    .row-xl-5,
-    .row-xl-6,
-    .row-xl-7,
-    .row-xl-8,
-    .row-xl-9,
-    .row-xl-10,
-    .row-xl-11,
-    .row-xl-12 {
+    .col-xl-1,
+    .col-xl-2,
+    .col-xl-3,
+    .col-xl-4,
+    .col-xl-5,
+    .col-xl-6,
+    .col-xl-7,
+    .col-xl-8,
+    .col-xl-9,
+    .col-xl-10,
+    .col-xl-11,
+    .col-xl-12 {
         flex-direction: column;
         justify-content: center;
         text-align: center;

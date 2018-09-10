@@ -17,10 +17,6 @@ body, html {
     font-size: 12px;
 }
 
-.container {
-    display: flex;
-    flex-direction: row;
-}
 
 .heading {
     font-size: 3rem;
