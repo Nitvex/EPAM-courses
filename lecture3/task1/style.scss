@@ -1,0 +1,53 @@
+$font-stack: Helvetica, sans-serif;
+$body-color: aqua;
+$gray-color: lightgray;
+
+body {
+  margin: 0;
+}
+
+%border-and-margin {
+  border: 1px solid gray;
+  margin-top: 1rem;
+}
+
+%height-width {
+  height: 100px;
+  width: 500px;
+}
+
+header {
+  background-color: $body-color;
+  height: 100vh;
+  width: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
+
+  .header__logo {
+    @extend %border-and-margin;
+    @extend %height-width;
+    background-color: $gray-color;
+
+  }
+
+  .header__search {
+    @extend %border-and-margin;
+    background-color: $gray-color;
+    width: 100%;
+  }
+
+  nav {
+    @extend %border-and-margin;
+    @extend %height-width;
+    background-color: $gray-color;
+    padding: 3rem;
+    width: calc(100vw - 10rem);
+
+    div.link {
+      @extend %border-and-margin;
+      background-color: $gray-color;
+      height: 50px;
+      width: 400px;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+}
+
+header nav div.link, header nav, header .header__search, header .header__logo {
+  border: 1px solid gray;
+  margin-top: 1rem;
+}
+
+header nav, header .header__logo {
+  height: 100px;
+  width: 500px;
+}
+
+header {
+  background-color: aqua;
+  height: 100vh;
+  width: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+header .header__logo {
+  background-color: lightgray;
+}
+header .header__search {
+  background-color: lightgray;
+  width: 100%;
+}
+header nav {
+  background-color: lightgray;
+  padding: 3rem;
+  width: calc(100vw - 10rem);
+}
+header nav div.link {
+  background-color: lightgray;
+  height: 50px;
+  width: 400px;
+}
+
+/*# sourceMappingURL=style.css.map */

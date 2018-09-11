@@ -1,0 +1,21 @@
+$status-colors: (
+        ""+red:red,
+        ""+green:green,
+        ""+orange:orange,
+        ""+blue:blue,
+        ""+indigo:indigo
+);
+
+body {
+  margin: 0;
+  padding: .5rem;
+}
+
+@each $name, $color in $status-colors {
+  .box__#{$name} {
+    background-color: $color;
+    display: inline-block;
+    height: 30vw;
+    width: 30vw;
+  }
+}
