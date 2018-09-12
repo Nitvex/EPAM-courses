@@ -1,0 +1,51 @@
+$large-screen: 1200px;
+
+%border-and-margin {
+  border: 2px solid gray;
+  margin: 0 5px 5px;
+  background-color: #fefcea;
+}
+
+%for-smaller-screens {
+  @media screen and (max-width: $large-screen) {
+    float: none;
+    justify-self: center;
+    margin: 0 auto 15px;
+  }
+}
+
+body {
+  margin: 0;
+}
+
+.header {
+  height: 50vh;
+  background-color: aqua;
+  padding: 1rem;
+
+  &__logo {
+    @extend %border-and-margin;
+    @extend %for-smaller-screens;
+    height: 100px;
+    width: 200px;
+    float: left;
+  }
+
+  &__search {
+    @extend %border-and-margin;
+    @extend %for-smaller-screens;
+    height: 100px;
+    width: 400px;
+    float: right;
+    @media screen and (max-width: $large-screen) {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: $large-screen) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: auto;
+  }
+}
