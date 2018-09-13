@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+}
+
+%padding-border {
+  border-radius: 5px;
+  padding: .3rem;
+}
+
+.header {
+  background-color: greenyellow;
+  padding: 1rem;
+
+  &__inputs {
+    border: 5px dotted white;
+    padding: 1rem;
+  }
+
+  &__input {
+    @extend %padding-border;
+  }
+
+  &__input--red {
+    @extend %padding-border;
+    background-color: red;
+  }
+
+  &__input--black {
+    @extend %padding-border;
+    background-color: black;
+    color: white;
+
+  }
+
+}
+

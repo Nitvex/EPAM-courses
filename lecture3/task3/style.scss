@@ -1,16 +1,27 @@
 $large-screen: 1200px;
 
+$break-sm: 480px;
+$break-lg: 1200px;
+
 %border-and-margin {
   border: 2px solid gray;
   margin: 0 5px 5px;
   background-color: #fefcea;
 }
 
-%for-smaller-screens {
-  @media screen and (max-width: $large-screen) {
-    float: none;
-    justify-self: center;
-    margin: 0 auto 15px;
+@mixin respond-to($media) {
+  @if $media == handhelds {
+    @media only screen and (max-width: $break-sm) {
+      @content;
+    }
+  } @else if $media == medium-screens {
+    @media only screen and (min-width: $break-sm + 1) and (max-width: $break-lg - 1) {
+      @content;
+    }
+  } @else if $media == wide-screens {
+    @media only screen and (max-width: $break-lg) {
+      @content;
+    }
   }
 }
 
@@ -25,7 +36,11 @@ body {
 
   &__logo {
     @extend %border-and-margin;
-    @extend %for-smaller-screens;
+    @include respond-to(wide-screens) {
+      float: none;
+      justify-self: center;
+      margin: 0 auto 15px;
+    }
     height: 100px;
     width: 200px;
     float: left;
@@ -33,19 +48,23 @@ body {
 
   &__search {
     @extend %border-and-margin;
-    @extend %for-smaller-screens;
+    @include respond-to(wide-screens) {
+      float: none;
+      justify-self: center;
+      margin: 0 auto 15px;
+      width: 100%;
+    }
     height: 100px;
     width: 400px;
     float: right;
-    @media screen and (max-width: $large-screen) {
-      width: 100%;
-    }
+
   }
 
-  @media screen and (max-width: $large-screen) {
+  @include respond-to(wide-screens) {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: auto;
   }
+
 }
