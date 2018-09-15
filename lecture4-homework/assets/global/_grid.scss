@@ -1,6 +1,15 @@
 /* Column system
    Here is 12-column system presented
- */
+
+  Generates classes col-xs-i,
+                    col-md-i,
+                    col-lg-i,
+                    col-xl-i i goes through 1..12
+  xs - extra small screens
+  md - medium screens
+  lg - large screens
+  xl - extra large screens
+*/
 
 @each $screen-size-name in $screen-sizes {
   @for $column from 1 through 12 {
