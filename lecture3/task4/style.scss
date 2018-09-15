@@ -1,4 +1,5 @@
 $large-screen: 1200px;
+$clicked: false;
 
 %border-and-margin {
   border: 2px solid gray;
@@ -8,6 +9,14 @@ $large-screen: 1200px;
 
 body {
   margin: 0;
+}
+
+@mixin isClicked($clicked) {
+  @if $clicked == true {
+    display: none;
+  } @else {
+    display: block;
+  }
 }
 
 .header {
@@ -37,9 +46,16 @@ body {
       height: 100px;
       width: 100px;
       float: left;
+      &:focus {
+        @if $clicked == true {
+          $clicked: false;
+        } @else {
+          $clicked: true;
+        }
+      }
     }
 
-    @media(max-width: $large-screen) {
+    @if $clicked == true {
       display: flex;
       flex-direction: column;
       &__search {
@@ -57,16 +73,11 @@ body {
     position: absolute;
     top: 2%;
     right: 2%;
-
-    @media(min-width: $large-screen) {
-      display: none;
-    }
+    @include isClicked(not $clicked);
   }
   &__links {
     float: right;
-    @media(max-width: $large-screen) {
-      display: none;
-    }
+    @include isClicked($clicked);
   }
 
 }

@@ -1,0 +1,35 @@
+/* Flex */
+
+%flex{
+  display: flex;
+}
+
+.flex {
+  @extend %flex;
+}
+
+.flex-row {
+  @extend %flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  @extend %flex;
+  flex-direction: column;
+}
+
+.space-between {
+  @include flex-alignment(space-between);
+}
+
+.y-center {
+  @include flex-alignment(center);
+}
+
+.x-start {
+  @include flex-alignment(flex-start);
+}
+
+.x-end {
+  @include flex-alignment(flex-end);
+}

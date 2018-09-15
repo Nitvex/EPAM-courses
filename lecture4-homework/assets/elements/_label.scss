@@ -1,0 +1,16 @@
+%label {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: .25rem;
+}
+
+
+.hfv-label-small {
+  @extend %label;
+  font-size: 1rem;
+}
+
+.hfv-label-large {
+  @extend %label;
+  font-size: 2rem;
+  padding: .5rem;
+}

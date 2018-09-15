@@ -1,0 +1,148 @@
+.row {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Floats */
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.text-center {
+  @include text-alignment(center);
+}
+
+.text-left {
+  @include text-alignment(left);
+}
+
+.text-right {
+  @include text-alignment(right);
+}
+
+/* Margins:
+  generates classes like ma-1, mt-2, ml-4
+  ma - All-side margins
+  mt - Top margins
+  mr - Right margins
+  mb - Bottom margins
+  ml - Left margins
+  mx - Left-Right margins
+  my - Top-Bottom margins
+*/
+
+@each $margin in ma, mt, mr, mb, ml, mx, my {
+  @for $indent from 1 through 4 {
+
+    @if $margin == ma {
+      .#{$margin}-#{$indent} {
+        margin: (4*$indent)+px;
+      }
+    }
+
+    @if $margin == mt {
+      .#{$margin}-#{$indent} {
+        margin-top: (4*$indent)+px;
+      }
+    }
+
+    @if $margin == mr {
+      .#{$margin}-#{$indent} {
+        margin-right: (4*$indent)+px;
+      }
+    }
+
+    @if $margin == mb {
+      .#{$margin}-#{$indent} {
+        margin-bottom: (4*$indent)+px;
+      }
+    }
+
+    @if $margin == ml {
+      .#{$margin}-#{$indent} {
+        margin-left: (4*$indent)+px;
+      }
+    }
+
+    @if $margin == mx {
+      .#{$margin}-#{$indent} {
+        margin: 0 (4*$indent)+px;
+      }
+    }
+
+    @if $margin == my {
+      .#{$margin}-#{$indent} {
+        margin: (4*$indent)+px 0;
+      }
+    }
+  }
+}
+
+/* Paddings:
+   generates classes like pa-1, pt-2, pl-4
+    pa - All-side paddings
+    pt - Top paddings
+    pr - Right paddings
+    pb - Bottom paddings
+    pl - Left paddings
+    px - Left-Right paddings
+    py - Top-Bottom paddings
+*/
+
+@each $padding in pa, pt, pr, pb, pl, px, py {
+  @for $indent from 1 through 4 {
+
+    @if $padding == pa {
+      .#{$padding}-#{$indent} {
+        padding: (4*$indent)+px;
+      }
+    }
+
+    @if $padding == pt {
+      .#{$padding}-#{$indent} {
+        padding-top: (4*$indent)+px;
+      }
+    }
+
+    @if $padding == pr {
+      .#{$padding}-#{$indent} {
+        padding-right: (4*$indent)+px;
+      }
+    }
+
+    @if $padding == pb {
+      .#{$padding}-#{$indent} {
+        padding-bottom: (4*$indent)+px;
+      }
+    }
+
+    @if $padding == pl {
+      .#{$padding}-#{$indent} {
+        padding-left: (4*$indent)+px;
+      }
+    }
+
+    @if $padding == px {
+      .#{$padding}-#{$indent} {
+        padding: 0 (4*$indent)+px;
+      }
+    }
+
+    @if $padding == py {
+      .#{$padding}-#{$indent} {
+        padding: (4*$indent)+px 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- Framework styles -->
+    <link rel="stylesheet" href="assets/style.css">
+    <!-- Styles for demonstration -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font for icons -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="text-center col-xs-12 heading">Columns</div>
+<div class="text-center col-xs-12 subheading">Column xs-2 and Column xs-10</div>
+<div class="row">
+    <div class="col-xs-2 blue">
+        <div>Hello</div>
+        <div>World</div>
+    </div>
+    <div class="col-xs-10 green"></div>
+</div>
+<div class="text-center col-xs-12 subheading">Column md-5 and Column md-6</div>
+<div class="row">
+    <div class="col-md-5 blue">
+        <div>Hello</div>
+        <div>World</div>
+    </div>
+    <div class="col-md-6 red"></div>
+</div>
+<div class="text-center col-xs-12 subheading">Column lg-3 and Column lg-7</div>
+<div class="row">
+    <div class="col-lg-3 red">
+        <div>Hello</div>
+        <div>World</div>
+    </div>
+    <div class="col-lg-7 blue"></div>
+</div>
+<div class="text-center col-xs-12 subheading">Column xl-3 with ma-2 and py-3 and Column xl-5</div>
+<div class="row">
+    <div class="col-xl-3 green">
+        <div class="ma-2">Hello</div>
+        <div class="py-3">World</div>
+    </div>
+    <div class="col-xl-5 red"></div>
+</div>
+<div class="text-center col-xs-12 heading">Flex</div>
+<div class="text-center col-xs-12 subheading">Flex-row</div>
+<div class="flex-row">
+    <div class="green rectangle"></div>
+    <div class="red rectangle"></div>
+</div>
+<div class="text-center col-xs-12 subheading">Flex-column</div>
+<div class="flex-column">
+    <div class="green rectangle"></div>
+    <div class="red rectangle"></div>
+</div>
+<div class="text-center col-xs-12 subheading">X-start</div>
+<div class="x-start">
+    <div class="green rectangle"></div>
+    <div class="red rectangle"></div>
+</div>
+<div class="text-center col-xs-12 subheading">X-end</div>
+<div class="x-end">
+    <div class="green rectangle"></div>
+    <div class="red rectangle"></div>
+</div>
+<div class="text-center col-xs-12 subheading">Y-center</div>
+<div class="y-center">
+    <div class="green rectangle"></div>
+    <div class="red rectangle"></div>
+</div>
+<div class="text-center col-xs-12 subheading">Space-between</div>
+<div class="space-between">
+    <div class="green rectangle"></div>
+    <div class="red rectangle"></div>
+</div>
+<div class="text-center col-xs-12 subheading">Clearfix with pull-right and pull-left</div>
+<div class="clearfix">
+    <div class="green rectangle pull-right"></div>
+    <div class="red rectangle pull-left"></div>
+</div>
+
+<div class="text-center col-xs-12 heading">Homework 2 elements</div>
+<!-- hfv stands for html-framework-Vozisov -->
+<div class="text-center col-xs-12 subheading">Inputs</div>
+<div class="row">
+    <i class="input-icon fa fa-address-book" aria-hidden="true"></i>
+    <input class="hfv-input mr-3" placeholder="Simple input">
+    <input disabled class="hfv-input  mr-3" placeholder="Disabled">
+    <input readonly class="hfv-input" placeholder="Readonly">
+</div>
+<div class="text-center col-xs-12 subheading">Labels</div>
+<div class="row">
+    <label class="hfv-label-small mr-3">Some text</label>
+    <label class="hfv-label-large mr-3">Some text</label>
+</div>
+<div class="text-center col-xs-12 subheading">Textareas</div>
+<div class="row">
+    <textarea class="hfv-textarea mr-3" placeholder="Hey! I'm textarea, What do you want to write?"></textarea>
+    <textarea class="hfv-textarea mr-3" disabled placeholder="I'm disabled textarea"></textarea>
+    <textarea class="hfv-textarea mr-3" readonly placeholder="I'm readonly textarea"></textarea>
+</div>
+<div class="text-center col-xs-12 subheading">Buttons</div>
+<div class="row">
+    <button class="hfv-button mr-3">Usual button</button>
+    <button class="hfv-button hfv-button-big mr-3">Big button</button>
+    <button class="hfv-button hfv-button-small mr-3">Small button</button>
+    <button class="hfv-button hfv-button-small mr-3" disabled>Disabled button</button>
+    <button class="hfv-button hfv-button-primary mr-3">Primary button</button>
+    <button class="hfv-button hfv-button-secondary mr-3">Secondary button</button>
+    <button class="hfv-button hfv-button-warning mr-3">Warning button</button>
+</div>
+<div class="text-center col-xs-12 subheading">Checkboxes</div>
+<div class="row">
+    <input type="checkbox" class="hfv-checkbox">
+    <input type="checkbox" disabled class="hfv-checkbox">
+</div>
+<div class="text-center col-xs-12 subheading">Radio button</div>
+<div class="row">
+    <input type="radio" class="hfv-radio">
+    <input type="radio" disabled class="hfv-radio">
+</div>
+<div class="text-center col-xs-12 subheading">Form</div>
+<form class="hfv-form ma-4 pa-3">
+    <h1 class="hfv-title-large my-2">Help us to know a litle bit more about you!</h1>
+    <label class="hfv-label-small mr-2">Name</label>
+    <input class="hfv-input" placeholder="Enter your name">
+    <p><input name="gender" type="radio" value="Male" class="hfv-radio my-2"> Male</p>
+    <p><input name="gender" type="radio" value="Female" class="hfv-radio my-2"> Female</p>
+    <textarea class="hfv-textarea my-2" placeholder="Write something about yourself"></textarea>
+    <br>
+    <button class="hfv-button hfv-button-secondary mt-2">Confirm</button>
+</form>
+</body>
+</html>

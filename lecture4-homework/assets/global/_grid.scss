@@ -1,0 +1,55 @@
+/* Column system
+   Here is 12-column system presented
+ */
+
+@each $screen-size-name in $screen-sizes {
+  @for $column from 1 through 12 {
+    .col-#{$screen-size-name}-#{$column} {
+      display: flex;
+      flex-direction: row;
+      width: $column/12*100%;
+    }
+
+    @if $screen-size-name == xs {
+      @include respond-to(xs) {
+        .col-#{$screen-size-name}-#{$column} {
+          flex-direction: column;
+          justify-content: center;
+          text-align: center;
+        }
+      }
+    }
+
+    @if $screen-size-name == md {
+      @include respond-to(md) {
+        .col-#{$screen-size-name}-#{$column} {
+          flex-direction: column;
+          justify-content: center;
+          text-align: center;
+        }
+      }
+    }
+
+    @if $screen-size-name == lg {
+      @include respond-to(lg) {
+        .col-#{$screen-size-name}-#{$column} {
+          flex-direction: column;
+          justify-content: center;
+          text-align: center;
+        }
+      }
+    }
+
+    @if $screen-size-name == xl {
+      @include respond-to(xl) {
+        .col-#{$screen-size-name}-#{$column} {
+          flex-direction: column;
+          justify-content: center;
+          text-align: center;
+        }
+      }
+    }
+
+  }
+}
+

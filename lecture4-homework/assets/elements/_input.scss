@@ -1,0 +1,41 @@
+.hfv-input {
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: 0.25rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.hfv-input:focus {
+  border: 2px solid aquamarine;
+  transition-duration: .15s;
+}
+
+.hfv-input:invalid {
+  border: 2px solid indianred;
+  transition-duration: .15s;
+}
+
+.hfv-input:disabled {
+  background-color: gray;
+  color: white;
+}
+
+.hfv-input:read-only {
+  background-color: lightblue;
+  color: white;
+}
+
+i.input-icon + input {
+  padding-left: 26px;
+}
+
+i.input-icon {
+  width: 26px;
+  height: 26px;
+  line-height: 26px;
+  text-align: center;
+  margin-right: -26px;
+  position: relative;
+  z-index: 1;
+  float: left;
+}

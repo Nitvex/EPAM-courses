@@ -1,0 +1,26 @@
+.hfv-textarea {
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: 0.25rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.hfv-textarea:focus {
+  border: 2px solid aquamarine;
+  transition-duration: .15s;
+}
+
+.hfv-textarea:invalid {
+  border: 2px solid indianred;
+  transition-duration: .15s;
+}
+
+.hfv-textarea:disabled {
+  background-color: gray;
+  color: white;
+}
+
+.hfv-textarea:read-only {
+  background-color: lightblue;
+  color: white;
+}

@@ -1,0 +1,29 @@
+@mixin flex-alignment($alignment) {
+  display: flex;
+  justify-content: $alignment;
+}
+
+@mixin text-alignment($alignment) {
+  text-align: $alignment;
+  justify-content: $alignment;
+}
+
+@mixin respond-to($media) {
+  @if $media == xs {
+    @media screen and (max-width: $break-xs), screen and (max-device-width: $break-xs) {
+      @content;
+    }
+  } @else if $media == md {
+    @media screen and (max-width: $break-md), screen and (max-device-width: $break-md) {
+      @content;
+    }
+  } @else if $media == lg {
+    @media screen and (max-width: $break-lg), screen and (max-device-width: $break-lg) {
+      @content;
+    }
+  } @else if $media == xl {
+    @media screen and (max-width: $break-xl), screen and (max-device-width: $break-xl) {
+      @content;
+    }
+  }
+}
