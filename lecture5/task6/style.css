@@ -1,0 +1,26 @@
+.outer {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+
+}
+
+.outer:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: '';
+    width: 20%;
+    height: 100%;
+}
+
+.inner {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    vertical-align: middle;
+    background-color: #fcc;
+}
+
+body {
+    margin: 0;
+}

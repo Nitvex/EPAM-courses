@@ -1,0 +1,20 @@
+.outer {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    position: relative;
+}
+
+.inner {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    margin: -50px;
+    top: 50%;
+    left: 50%;
+    background-color: #fcc;
+}
+
+body {
+    margin: 0;
+}

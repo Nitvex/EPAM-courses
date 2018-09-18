@@ -1,0 +1,17 @@
+.outer {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+
+.inner {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 50px 50px;
+    background-color: #fcc;
+}
+
+body {
+    margin: 0;
+}
