@@ -1,4 +1,3 @@
 export function parseEmailDomain(emailAddress) {
-    let result = emailAddress.match(/^([\w-]|(\.(?!\.)))+@(\w+\.\w+)$/);
-    return result[3];
+  return emailAddress.match(/^([\w-]|(\.(?!\.)))+@(\w+\.\w+)$/)[3];
 }
