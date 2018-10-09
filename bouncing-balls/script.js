@@ -53,14 +53,25 @@ class Ball {
     }
 }
 
+class strangeBall extends Ball{
+    constructor(x, y, velX, velY, color, size){
+        super(x, y, velX, velY, color, size)
+    }
+    update(){
+        super.update();
+        this.size=random(1,30)
+    }
+
+}
 
 let balls = [];
+let strngBall=false;
 
 function ballsMove() {
     ctx.fillStyle = 'rgba(0,0,0,0.25)';
     ctx.fillRect(0, 0, width, height);
 
-    while (balls.length < 35) {
+    while (balls.length < 10) {
         let size = random(10, 20);
         let ball = new Ball(
             random(0 + size, width - size),
@@ -71,7 +82,23 @@ function ballsMove() {
             size
         );
         balls.push(ball);
+        if (!strngBall){
+            let size = random(10, 20);
+            let ball = new strangeBall(
+                random(0 + size, width - size),
+                random(0 + size, height - size),
+                random(-7, 7),
+                random(-7, 7),
+                'rgb(' + random(0, 255) + ',' + random(0, 255) + ',' + random(0, 255) + ')',
+                size
+            );
+            balls.push(ball);
+            strngBall=!strngBall;
+            console.log(strngBall);
+            debugger;
+        }
     }
+
 
     for (let i = 0; i < balls.length; i++) {
         balls[i].draw();
@@ -79,8 +106,10 @@ function ballsMove() {
         balls[i].collisionDetect();
     }
 
+
     requestAnimationFrame(ballsMove);
 }
+
 
 
 ballsMove();
