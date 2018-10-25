@@ -1,0 +1,1 @@
+# There were no tasks provided. Homework is to send get request to NYTimes API
