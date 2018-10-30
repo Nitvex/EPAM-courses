@@ -1,0 +1,1 @@
+# There were no tasks provided as well as homework
