@@ -1,0 +1,1 @@
+# There were no tasks provided as well as homework. We were told about Node.js and React

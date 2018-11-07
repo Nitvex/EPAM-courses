@@ -11,4 +11,4 @@ function loadUsers(userIds, load, done) {
 
 }
 
-module.exports = loadUsers
+module.exports = loadUsers;
